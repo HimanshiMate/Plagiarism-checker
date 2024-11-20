@@ -70,7 +70,7 @@ def detect_ai_content(text):
     
     payload = { "text": text }
     headers = {
-        "x-rapidapi-key": "YOUR_RAPIDAPI_KEY",  # Replace with your actual key
+        "x-rapidapi-key":settings.RAPIDAPI_KEY,  # Replace with your actual key
         "x-rapidapi-host": "ai-content-detector-ai-gpt.p.rapidapi.com",
         "Content-Type": "application/json"
     }
